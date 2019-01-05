@@ -1,0 +1,121 @@
+@import './var.scss';
+// button
+.el-button {
+    min-width: 90px;
+    padding: 9px 20px;
+}
+.el-message-box__wrapper .el-button{
+    min-width: auto;
+}
+.el-button+.el-button {
+    margin-left: 5px;
+}
+.el-button--text {
+    color: $color-04730e;
+}
+.el-button--primary {
+    background-color: $color-35b53f;
+    border-color: $color-35b53f;
+    &:active, &:focus {
+        background-color: $color-228f2f;
+        border-color: $color-228f2f;
+    }
+    &:hover {
+        background-color: $color-57c15d;
+        border-color: $color-57c15d;
+    }
+}
+.el-button--primary.is-active {
+    background-color: $color-228f2f;
+    border-color: $color-228f2f;
+}
+
+.el-button--primary.is-plain {
+    color: $color-04730e;
+    border-color: $color-04730e;
+    background-color: transparent;
+    &:active, &:focus {
+        color: $color-228f2f;
+        border-color: $color-228f2f;
+        background-color: transparent;
+    }
+    &:hover {
+        color: $color-57c15d;
+        border-color: $color-57c15d;
+        background-color: transparent;
+    }
+}
+.el-button--primary.is-plain.is-active {
+    color: $color-35b53f;
+    border-color: $color-35b53f;
+    background-color: transparent;
+}
+
+// radio
+.el-radio__inner {
+    width: 18px;
+    height: 18px;
+}
+.el-radio__inner::after {
+    width: 6px;
+    height: 6px;
+}
+.el-radio__input.is-checked {
+    .el-radio__inner {
+        border-color: $color-40a94a;
+        background: $color-40a94a;
+    }
+    &+.el-radio__label {
+        color: $color-04730e;
+    }
+} 
+// form
+//form高度
+.el-form-item__label,
+.el-form-item__content {
+    line-height: 34px;
+} //input,select高度
+.el-input__inner {
+    height: 34px;
+    margin: 3px 0;
+    line-height: 34px;
+    font-size: 14px;
+    border-color: $color-cbcbcb;
+}
+.el-form-item__label {
+    color: #333;
+}
+.el-input-group__append {
+    height: 34px;
+}
+// popover
+//rubik-u电脑popover黑色样式
+.blackPopover {
+    opacity: 0.9;
+    background: #333333;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.14);
+    border-radius: 2px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0.9px;
+    text-align: justify;
+    &.el-popper[x-placement^=top] .popper__arrow {
+    border-top-color: rgba(0, 0, 0, 0.9);
+    }
+    &.el-popper[x-placement^=bottom] .popper__arrow {
+    border-bottom-color: rgba(0, 0, 0, 0.9);
+    }
+    &.el-popper[x-placement^=top] .popper__arrow:after {
+    bottom: 1px;
+    margin-left: -6px;
+    border-top-color: rgba(0, 0, 0, 0.9);
+    border-bottom-width: 0;
+    }
+    &.el-popper[x-placement^=bottom] .popper__arrow:after {
+    bottom: 1px;
+    margin-left: -6px;
+    border-bottom-color: rgba(0, 0, 0, 0.9);
+    border-bottom-width: 0;
+    }
+}

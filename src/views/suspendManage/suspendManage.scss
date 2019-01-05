@@ -1,0 +1,44 @@
+.suspend-manage {
+  .search-form-wrap {
+    margin: 30px 0 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .last-item {
+    margin-right: 0;
+  }
+  .scope-btn {
+    padding-left: 0;
+  }
+  .page {
+    margin: 20px 0 13px;
+  }
+  .add-suspend-form {
+    width: 500px;
+    padding: 28px 0;
+    .el-form-item:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .no-data-tip {
+    text-align: center;
+    padding: 20px;
+    color: #909399;
+  }
+  .checkbox-wrap {
+    height: 300px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+  }
+  .checkbox-group {
+    padding: 14px 0 14px 20px;
+  }
+
+  .el-checkbox+.el-checkbox {
+    margin-left: 0;
+  }
+  .el-checkbox {
+    display: block;
+  }
+}

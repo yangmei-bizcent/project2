@@ -1,0 +1,49 @@
+@mixin recordInstall {
+    width:100px;
+    height:34px;
+    border: 1px solid #35B53F;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #04730E;
+    letter-spacing: 0;
+    //text-align: center;
+    margin:30px 30px 0 0 ;
+    float:right;
+}
+.registrationRecord{
+    .installTxt,.installExcel{
+         @include recordInstall;
+    }
+    .el-range-separator{
+      width:20px;
+      font-size: 14px;
+      color: #2A2A2A;
+    }
+    .el-table thead{
+      font-size: 14px;
+      color: #666666;
+      background: #F2F2F2;
+    }
+    .el-date-editor .el-range-input, .el-date-editor .el-range-separator{
+      height:auto;
+    }
+    .el-input__icon{
+      height:auto;
+    }
+    .el-pagination.is-background .el-pager li:not(.disabled).active{
+      background: #35B53F;
+    }
+    .el-pagination__editor.el-input .el-input__inner{
+      margin:0;
+      padding:0;
+    }
+    .el-pagination,.is-background{
+      text-align:right;
+      padding-top:36px;
+      padding-bottom:18px;
+    }
+    .el-table th{
+        background: #F2F2F2;
+    }
+    
+}

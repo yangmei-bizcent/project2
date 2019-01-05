@@ -1,0 +1,150 @@
+.el-table .el-button {
+  min-width: 60px !important;
+  padding: 5px;
+}
+
+.deptManage {
+  position: relative;
+  min-width: 900px;
+  min-height: 600px;
+
+  &::before {
+    content: "";
+    display: table;
+  }
+
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .el-dialog__header {
+    border-bottom: 1px solid #E7E7E7;
+  }
+
+  .el-dialog__footer {
+    border-top: 1px solid #E7E7E7;
+  }
+
+  .el-checkbox-group {
+    max-height: 250px;
+    overflow-y: auto;
+  }
+
+  .el-checkbox {
+    margin-left: 0;
+    width: 33%;
+    margin-bottom: 10px;
+  }
+
+  .el-button--text {
+    color: #409EFF;
+  }
+
+  .helpContain {
+    min-height: 500px;
+    padding: 0 24px;
+    padding-bottom: 80px;
+    border: 1px solid #FFFFFF;
+    background: #fff;
+    overflow: hidden;
+
+    .helpInfo {
+      padding-bottom: 50px;
+    }
+
+    .helpUpload {
+      padding-bottom: 20px;
+    }
+
+    .helpUploadTitle {
+      padding: 0 4px;
+      margin-bottom: 20px;
+      line-height: 56px;
+      font-weight: bold;
+      border-bottom: 1px solid #e6e6e6;
+      font-size: 24px;
+      color: #333333;
+      span {
+        font-weight: normal;
+      }
+    }
+
+    .helpEdit {
+      padding-bottom: 20px;
+
+      hr {
+        border: none;
+        width: 500px;
+        height: 1px;
+        margin: 0 auto;
+        background: #E6E6E6;
+      }
+
+      .el-select {
+        margin-left: 10px;
+      }
+
+      .rightSearch {
+        float: right;
+      }
+    }
+
+    .comLogo {
+      position: relative;
+      width: 40px;
+      height: 40px;
+      overflow: hidden;
+
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+      }
+    }
+
+    .el-form-item__label {
+      color: #425B77;
+      letter-spacing: 0.2px;
+    }
+
+    .halfForm {
+      display: inline-block;
+      width: 49%;
+    }
+
+    .el-pagination {
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .quill-editor {
+      margin-bottom: 20px;
+    }
+  }
+
+  .el-pagination {
+    margin-bottom: 20px;
+  }
+  .editDocInfo{
+    .el-form{
+        width: 450px;
+    }
+  }
+
+  .input-number {
+    input {
+      line-height: 18px;
+    }
+  }
+}
+
+.corporateComDetail {
+  .helpEdit {
+    width: 600px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,52 @@
+.doctor-manage {
+  .doctor1{
+    font-size: 24px;
+    color: #333333;
+    margin-top: -20px;
+  }
+  .search-form {
+    margin: 30px 0 8px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .last-item {
+    margin-right: 0;
+  }
+  .scope-btn {
+    padding-left: 0;
+  }
+  .page {
+    margin: 20px 0 13px;
+  }
+  .doctor-form {
+    padding: 30px 150px 5px 70px;
+  }
+  .dialog-body-wrap {
+    height: 570px;
+  }
+  .head-img {
+    float: left;
+    height: 80px;
+    width: 80px;
+    margin-right: 10px;
+  }
+  .btn-upload {
+    font-size: 12px;
+    padding: 4px 14px;
+  }
+  .tip-wrap {
+    margin-top: 24px;
+    line-height: 18px;
+    font-size: 12px;
+    color: #666;
+    letter-spacing: 0.2px;
+  }
+  .doctor-form {
+    .el-input__inner, .el-textarea__inner {
+      width: 300px;
+    }
+  }
+  .el-form-item__content {
+    line-height: 18px;
+  }
+}

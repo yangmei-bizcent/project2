@@ -1,0 +1,130 @@
+.schedule-config {
+  .cut-off {
+    display: inline-block;
+    height: 23px;
+    width: 1px;
+    background: #E1E1E1;
+    margin: 0 10px;
+  }
+  .dep-title {
+    font-size: 24px;
+    color: #333;
+  }
+  .schedule-title {
+    margin: 21px 0 18px;
+  }
+  .week-title {
+    text-align: center;
+    color: #666666;
+  }
+  .table-cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .tag {
+      display: flex;
+      align-items: center;
+      padding: 4px 4px 4px 9px;
+    }
+    .tag-hover {
+      background: rgba(60, 158, 248, 0.12);
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .delete-icon {
+      display: inline-flex;
+      align-items: center;
+      width: 20px;
+      height: 20px;
+      color: #3C9EF8;
+      .default-state {
+        display: none;
+      }
+      .icon-hover {
+        display: block;
+      }
+    }
+  }
+  .time-column {
+    font-size: 16px;
+    color: #333;
+    letter-spacing: -0.39px;
+  }
+  .no-data-tip {
+    font-size: 14px;
+    color: #999;
+    letter-spacing: -0.34px;
+  }
+  .add-doctor-btn {
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #666;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 16px;
+  }
+  .doctor-config-form {
+    display: inline-block;
+    width: 600px;
+    .el-form-item {
+      margin-bottom: 0; 
+    }
+  }
+  .doctor-search-wrap {
+    .el-input {
+      width: 300px;
+    }
+  }
+  .dialog-section-wrap {
+    padding: 24px 0;
+    margin: 0 24px;
+  }
+  .dialog-config-wrap {
+    display: flex;
+    align-items: center;
+    line-height: 18px;
+    border-bottom: 1px solid #E7E7E7;
+    span {
+      font-family: 'MicrosoftYaHei-Bold';
+      font-size: 16px;
+      color: #333;
+      font-weight: 600;
+      margin-right: 83px;
+      letter-spacing: 0.2px;
+    }
+  }
+  .doctor-table-wrap {
+    height: 300px;
+    padding-left: 24px;
+  }
+  .table-inline-column {
+    display: flex;
+    align-items: center;
+    span:first-child {
+      margin-right: 10px;
+    }
+    span:last-child {
+      margin-left: 10px;
+    }
+  }
+  .doctor-table {
+    .el-input {
+      width: 90px;
+    }
+  }
+
+  .el-table--border td, .el-table--border th{
+    border-right: 1px solid #EFEEF5 !important;
+  }
+  .el-table__header {
+    th:first-child {
+      padding: 0 !important;
+      .cell {
+        padding: 0 !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,144 @@
+@import '@/assets/css/var.scss';
+.no_org{
+  position: relative;
+  height: 32px;
+  padding: 6px 16px 6px 43px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 100px;
+  cursor: pointer;
+  margin:0 12px;
+  &.theme-green-dropdown {
+    background: rgba(53,181,63,0.12);
+}
+  .headLogo {
+    position: absolute;
+    top: 5px;
+    left: 16px;
+    display: block;
+    width: 21px;
+    height: 21px;
+    font-size: 0;
+    overflow: hidden;
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%)
+    }
+}
+  .no_org_text{
+    max-width: 90px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+.main_layout{
+  width:85%;
+  margin: 0 auto;
+}
+.layout_minWidth{
+  min-width: 1024px;
+}
+.el-container {
+  .layout-header {
+    z-index: 2000;
+    background-color: $color-09b52d;
+    padding: 0;
+    * {
+      color: #fff;
+    }
+  }
+
+  .height70 {
+    height: 70px;
+  }
+
+  .layout-page-title {
+    height: 93px;
+    line-height: 93px;
+    padding: 0 22px;
+  }
+
+  .layout-header-tabs {
+    .el-tabs__header {
+      margin: 0;
+    }
+
+    .el-tabs__item.is-active {
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .el-tabs__active-bar {
+      height: 0;
+    }
+
+    .el-tabs__nav-wrap::after {
+      background-color: transparent;
+    }
+  }
+
+  .layout-logo {
+    margin-right: 48px;
+  }
+
+  .layout-header-tool {
+    display: flex;
+    margin-right: 87px;
+    
+    .el-dropdown {
+      position: relative;
+      line-height: 20px;
+      font-size: 14px;
+      color: #FFFFFF;
+      letter-spacing: 0;
+      padding: 0 !important;
+      cursor: pointer;
+      .el-dropdown-link{
+        max-width:130px;
+        overflow:hidden;
+        text-overflow:ellipsis;
+        white-space:nowrap;
+        border-radius: 100px;
+        padding: 6px 16px 6px 43px;
+        background: rgba(255, 255, 255, 0.12);
+    }
+      .headLogo {
+        position: absolute;
+        top: 5px;
+        left: 16px;
+        display: block;
+        width: 21px;
+        height: 21px;
+        font-size: 0;
+        overflow: hidden;
+
+        img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 100%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+
+  .index-main {
+    padding: 0;
+  }
+
+  .layout-page-content {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,264 @@
+@import '@/assets/css/var.scss';
+.page-appointconfig {
+    width: 84%;
+    min-width: 1200px;
+    max-width: 1600px;
+    margin: 30px auto;
+    margin-bottom: 190px;
+    background: #fff;
+    .width300 {
+        width: 300px;
+    }
+    .width-per80 {
+        width: 80%;
+    }
+    .minwidth-initial {
+        min-width: initial;
+        padding: 0;
+    }
+    .max-width182 {
+        max-width: 182px;
+    }
+    .height-per100 {
+        height: 100%;
+    }
+    .minheight400 {
+        min-height: 400px;
+    }
+    .header-right {
+        font-weight: 600;
+        height: 67px;
+        line-height: 67px;
+        margin: 0 0 30px 0;
+        padding-left: 24px;
+        border-bottom: 1px solid $color-e6e6e6;
+    }
+    .el-textarea__inner {
+        resize: none;
+    }
+    .overflowXHidden {
+        overflow-x: hidden;
+    }
+    .wrap-top-content {
+        border: 1px solid $color-e6e6e6;
+        border-bottom: 0;
+        td {
+            vertical-align: top;
+        }
+        .border-right {
+            border-right: 1px solid $color-e6e6e6;
+        }
+    }
+    .wrap-right-content {
+        // width: 75%;
+    }
+    .wrap-left-menu {
+        color: #979797;
+        // width: 25%;
+        &>div {
+            width: 100%;
+        }
+    }
+    .wrap-bottom-tool {
+        height: 70px;
+        line-height: 70px;
+        border: 1px solid $color-e6e6e6;
+        padding-left: 30%;
+    }
+    .left-menu-item {
+        height: 44px;
+        line-height: 44px;
+        background: #f8f8f8;
+    }
+    .active-item {
+        color: #04730e;
+        font-weight: bold;
+        background: #ebf6ec;
+        border: 1px solid #35b53f;
+        position: relative;
+        &:after {
+            width: 8px;
+            height: 8px;
+            box-sizing: content-box;
+            content: "";
+            border: 1px solid #35b53f;
+            background: #ebf6ec;
+            border-left: 0;
+            border-bottom: 0;
+            position: absolute;
+            right: -5px;
+            top: 17px;
+            transform: rotate(45deg) scaleY(1);
+            transform-origin: center;
+        }
+    }
+    .w-e-toolbar {
+        border-top: none !important;
+    }
+    .edit-container {
+        .w-e-text-container {
+            height: 100px !important;
+        }
+    }
+    .el-date-editor {
+        .el-range__icon, .el-range__close-icon {
+            margin-bottom: 7px;
+        }
+        .el-range-separator {
+            width: initial;
+            margin-bottom: 7px;
+        }
+    }
+    .wrap-delete-icon {
+        width: 44px;
+        height: 44px;
+        margin-left: 20px;
+        i {
+            width: 44px;
+            height: 44px;
+            background: url('../../assets/img/department/delete-icon.png') center no-repeat;
+            background-size: contain;
+        }
+    }
+    .wrap-add-icon {
+        i {
+            width: 32px;
+            height: 32px;
+            background: url('../../assets/img/department/add-icon.png') center no-repeat;
+            background-size: contain;
+        }
+    }
+    .moreShow {
+        right: 20px;
+        transition: right 0.5s ease;
+        .wrap-more-list {
+            border: 1px solid #e6e6e6;
+            box-shadow: -4px 0 12px #E6E6E6;
+        }
+    }
+    .hideShow {
+        right: -310px;
+        transition: right 0.5s ease;
+    }
+    .wrap-more-dlg {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        z-index: 1000;
+        padding-left: 43px;
+        .wrap-dlg-tool {
+            z-index: 9;
+            box-sizing: border-box;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(0, -50%);
+            width: 43px;
+            padding-left: 12px;
+            text-align: center;
+            line-height: 18px;
+            font-size: 14px;
+            color: #FFFFFF;
+            cursor: pointer;
+            .tool-rrow {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translate(0, -50%);
+                width: 12px;
+                height: 28px;
+                line-height: 28px;
+                border-radius: 2px 0 0 2px;
+                background: #2F9D37 url("../../assets/img/arrowLeft.png")no-repeat center;
+                background-size: 6px;
+            }
+            .openArrow {
+                background: #2F9D37 url("../../assets/img/arrowRight.png")no-repeat center;
+                background-size: 6px;
+            }
+            .tool-arrow-text {
+                padding: 10px 4px;
+                background: #35B53F;
+                border-radius: 6px 0 0 6px;
+            }
+        }
+        .wrap-more-list {
+            position: relative;
+            width: 330px;
+            height: 100%;
+            background: #fff;
+            border-left: 0;
+            overflow: auto;
+            padding: 34px 40px;
+            /*滚动条样式*/
+            &::-webkit-scrollbar{
+                width:6px;
+                height:6px;
+            }
+            &::-webkit-scrollbar-track{
+                padding: 0 3px;
+                background: #f7f7f7;
+                border: 1px solid #e6e6e6;
+            }
+            &::-webkit-scrollbar-thumb{
+                background: #ccc;
+                border-radius:3px;
+            }
+            &::-webkit-scrollbar-thumb:hover{
+                background: #ccc;
+            }
+            &::-webkit-scrollbar-corner{
+                background: #f6f6f6;
+            }
+        }
+        .more-item {
+            width: 100px;
+            height: 140px;
+            background: #F6F8F9;
+            i {
+                width: 64px;
+                height: 64px;
+                background: url("../../assets/img/icon-appoint-config.png") center no-repeat;
+                background-size: contain;
+            }
+        }
+        .wrap-active-more-item {
+            color: #333;
+            .more-item {
+                border: 1px solid #09B52D;
+            } 
+            i {
+                background: url("../../assets/img/icon-active-appoint-config.png") center no-repeat;
+                background-size: contain;
+            }
+        }
+        .bottom-line {
+            width: 50px;
+            height: 2px;
+            background-color: $color-04730e;
+            margin-top: 7px;
+        }
+    }
+    .flow-item {
+        &:hover {
+            .tool-bg-model {
+                display: flex;
+            }
+        }
+    }
+    .tool-bg-model {
+        width: 100%;
+        height: 140px;
+        display: none;
+        background: rgba(0,0,0,.4);
+    }
+    .text-underline {
+        text-decoration: underline;
+    }
+}
+.icon-switchflow-warn{
+    width: 44px;
+    height: 44px;
+    background: url("../../assets/img/icon-switchflow-warn.png") center no-repeat;
+    background-size: contain;
+}
